@@ -8,17 +8,21 @@ function App() {
   const width = window.innerWidth;
   return (
     <Router>
-      <header className="flex justify-between px-5 h-16 items-center bg-teal-700 text-white font-bold">
-        <h1 className="text-xl">Photo Gallery</h1>
+      <header className="flex justify-between px-5 h-16 items-center text-teal-700 font-bold border-b-2 border-dashed border-teal-700">
+        <h1 className="text-2xl">Fusion Galeria</h1>
         <nav>
-          <ul className="flex gap-4">
-            <li className="gap-2 flex">
-              <GrGallery className="text-2xl"/>
-              <Link to="/">{width > 767 ? "Galeria de fotos" : ""}</Link>
+          <ul className="flex gap-6">
+            <li>
+              <Link to="/" className="gap-2 flex">
+                <GrGallery className="text-2xl" />
+                {width > 767 ? "Galeria de fotos" : ""}
+              </Link>
             </li>
-            <li className="gap-2 flex">
-              <FaStar className="text-2xl"/>
-              <Link to="/favorites">{width > 767 ? "Favoritos" : ""}</Link>
+            <li>
+              <Link to="/favorites" className="gap-2 flex">
+                <FaStar className="text-2xl" />
+                {width > 767 ? "Favoritos" : ""}
+              </Link>
             </li>
           </ul>
         </nav>
