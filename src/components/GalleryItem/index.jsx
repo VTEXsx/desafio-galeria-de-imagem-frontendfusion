@@ -7,7 +7,8 @@ function GalleryItem({ image }) {
   const openMoreInfo = () => {
     setIsHovered(true);
   };
-  const closeMoreInfo = () => {
+  const closeMoreInfo = (e) => {
+    e.stopPropagation();
     setIsHovered(false);
   };
   return (
