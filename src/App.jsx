@@ -11,7 +11,7 @@ function App() {
   const width = window.innerWidth;
   return (
     <Router>
-      <header className="flex justify-between px-5 h-16 items-center text-teal-700 font-bold border-b-2">
+      <header className="flex justify-between px-5 h-16 items-center text-teal-700 font-bold border-b-2 sticky top-0 z-50 bg-white">
         <h1 className="text-2xl">Fusion Gallery</h1>
         <nav>
           <ul className="flex gap-6 ">
