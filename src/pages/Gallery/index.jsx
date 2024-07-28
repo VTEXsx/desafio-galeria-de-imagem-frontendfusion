@@ -41,7 +41,7 @@ function Gallery() {
         <select
           value={color}
           onChange={(e) => setColor(e.target.value)}
-          className="p-2 border border-gray-300 rounded"
+          className="p-2 border border-gray-300 rounded cursor-pointer"
         >
           <option value="">Cores</option>
           <option value="red">Vermelho</option>
@@ -51,7 +51,7 @@ function Gallery() {
         <select
           value={type}
           onChange={(e) => setType(e.target.value)}
-          className="p-2 border border-gray-300 rounded"
+          className="p-2 border border-gray-300 rounded cursor-pointer"
         >
           <option value="">Categoria</option>
           <option value="landscape">Paisagem</option>
